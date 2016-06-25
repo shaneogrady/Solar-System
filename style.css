@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font:
     background: #080e24 url("http://neography.com/experiment/circles/solarsystem/bg.jpg") repeat;
     color: #626668;
 }
@@ -13,10 +14,12 @@ div.wrap {
     margin: 0 auto;
     padding: 60px 0;
 }
+
 section {
     display: block;
     position: relative;
 }
+
 header {
     text-align: center;
 }
@@ -33,11 +36,12 @@ ul.solarsystem {
     overflow: hidden;
 }
 ul.solarsystem li {
-    text-indent: -9999px;
+    text-indent: -1000px;
     position: absolute;
     border: 2px dashed #394057;
-/*    opacity: 0.7;*/
 }
+
+/* planet style */
 ul.solarsystem li span {
     display: block;
     position: absolute;
@@ -65,26 +69,14 @@ ul.solarsystem li.active.earth .moon {
     box-shadow: none;
 }
 ul.solarsystem li.sun {
-    width: 40px;
-    height: 40px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
     background: #fc3;
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0.22, rgb(204,153,0)),
-        color-stop(1, rgb(255,219,112))
-    );
-    background-image: -moz-linear-gradient(
-        center bottom,
-        rgb(204,153,0) 22%,
-        rgb(255,219,112) 100%
-    );
-    top: 302px;
-    left: 462px;
+    top: 282px;
+    left: 442px;
     border: none;
     -webkit-box-shadow: 0 0 50px #c90;
     -moz-box-shadow: 0 0 50px #c90;
@@ -103,6 +95,7 @@ ul.solarsystem li.sun span {
     border-radius: 30px;
 }
 
+/* Earth Line */
 ul.solarsystem li.earth {
     width: 220px;
     height: 220px;
@@ -113,10 +106,11 @@ ul.solarsystem li.earth {
     left: 370px;
     z-index: 97;
 }
+/* Earth On Line */
 ul.solarsystem li.earth span {
-    background: #06c;
-    top: 56px;
-    left: 5px;
+    background: #00f9ff;
+    top: 95px;
+    right: -6px;
 }
 ul.solarsystem li.earth span.moon {
     width: 4px;
@@ -129,6 +123,7 @@ ul.solarsystem li.earth span.moon {
     left: 12px;
 }
 
+/* Chicken Line */
 ul.solarsystem li.chicken {
     width: 320px;
     height: 320px;
@@ -139,13 +134,14 @@ ul.solarsystem li.chicken {
     left: 320px;
     z-index: 117;
 }
-
+/* chicken on line */
 ul.solarsystem li.chicken span {
     background: #8e44ad;
-    top: 80px;
-    right: 12px;
+    top: 145px;
+    right: -6px;
 }
 
+/* lobster Line */
 ul.solarsystem li.lobster {
     width: 360px;
     height: 360px;
@@ -156,11 +152,11 @@ ul.solarsystem li.lobster {
     left: 300px;
     z-index: 117;
 }
-
+/* lobster on line */
 ul.solarsystem li.lobster span {
-    background: #8e44ad;
-    top: 80px;
-    right: 12px;
+    background: #ff00a7;
+    top: 166px;
+    right: -6px;
 }
 
 /* CSS3 Animations */
@@ -173,6 +169,7 @@ ul.solarsystem li {
     -moz-animation-timing-function:linear;
     -moz-animation-name:orbit;
 }
+
 ul.solarsystem li.earth span {
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:linear;
@@ -183,11 +180,17 @@ ul.solarsystem li.earth span {
     -moz-animation-name:moon;
 }
 
+/* earth animation */
 ul.solarsystem li.earth {-webkit-animation-duration:12s; -moz-animation-duration:12s;}
 ul.solarsystem li.earth span {-webkit-animation-duration:2s; -moz-animation-duration:2s;}
-ul.solarsystem li.chicken {-webkit-animation-duration:22s; -moz-animation-duration:12s;}
+/* 2nd animation */
+ul.solarsystem li.earth {-webkit-animation-duration:12s; -moz-animation-duration:12s;}
+ul.solarsystem li.earth span {-webkit-animation-duration:2s; -moz-animation-duration:2s;}
+/* chicken animation */
+ul.solarsystem li.chicken {-webkit-animation-duration:22s; -moz-animation-duration:22s;}
 ul.solarsystem li.chicken span {-webkit-animation-duration:2s; -moz-animation-duration:4s;}
-ul.solarsystem li.lobster {-webkit-animation-duration:22s; -moz-animation-duration:12s;}
+/* lobster animation */
+ul.solarsystem li.lobster {-webkit-animation-duration:32s; -moz-animation-duration:12s;}
 ul.solarsystem li.lobster span {-webkit-animation-duration:2s; -moz-animation-duration:4s;}
 
 @-webkit-keyframes orbit { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
