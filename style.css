@@ -11,7 +11,7 @@ body {
 div.wrap {
     width: 960px;
     margin: 0 auto;
-    padding: 60px 0;
+    /* padding: 60px 0; */
 }
 
 section {
@@ -49,6 +49,16 @@ ul.solarsystem li span {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+ul.solarsystem span.jupiter {
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #ccc;
+    top: 12px;
+    left: 12px;
 }
 ul.solarsystem li.active {
     border-color: #aa4200;
@@ -93,7 +103,6 @@ ul.solarsystem li.sun span {
     -moz-border-radius: 30px;
     border-radius: 30px;
 }
-
 /* Earth Line */
 ul.solarsystem li.earth {
     width: 220px;
@@ -122,8 +131,8 @@ ul.solarsystem li.earth span.moon {
     left: 12px;
 }
 
-/* Chicken Line */
-ul.solarsystem li.chicken {
+/* mars Line */
+ul.solarsystem li.mars {
     width: 320px;
     height: 320px;
     -webkit-border-radius: 162px;
@@ -133,15 +142,15 @@ ul.solarsystem li.chicken {
     left: 320px;
     z-index: 117;
 }
-/* chicken on line */
-ul.solarsystem li.chicken span {
-    background: #fdff00;
+/* mars on line */
+ul.solarsystem li.mars span {
+    background: orange;
     top: 145px;
     right: -6px;
 }
 
-/* lobster Line */
-ul.solarsystem li.lobster {
+/* ceres Line */
+ul.solarsystem li.ceres {
     width: 400px;
     height: 400px;
     -webkit-border-radius: 362px;
@@ -151,15 +160,15 @@ ul.solarsystem li.lobster {
     left: 280px;
     z-index: 117;
 }
-/* lobster on line */
-ul.solarsystem li.lobster span {
+/* ceres on line */
+ul.solarsystem li.ceres span {
     background: #ff00a7;
     top: 166px;
     right: -5px;
 }
 
-/* salad line */
-ul.solarsystem li.salad {
+/* jupiter line */
+ul.solarsystem li.jupiter {
     width: 480px;
     height: 480px;
     -webkit-border-radius: 662px;
@@ -169,11 +178,16 @@ ul.solarsystem li.salad {
     left: 240px;
     z-index: 117;
 }
-/* salad on line */
-ul.solarsystem li.salad span {
+/* jupiter on line */
+ul.solarsystem li.jupiter span {
+    width: 40px;
+    height: 40px;
     background: #00ff11;
-    top: 166px;
-    right: 3px;
+    top: 122px;
+    right: 0px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 
 /* CSS3 Animations */
@@ -202,15 +216,15 @@ ul.solarsystem li.earth span {-webkit-animation-duration:2s; -moz-animation-dura
 /* 2nd animation */
 ul.solarsystem li.earth {-webkit-animation-duration:12s; -moz-animation-duration:12s;}
 ul.solarsystem li.earth span {-webkit-animation-duration:2s; -moz-animation-duration:2s;}
-/* chicken animation */
-ul.solarsystem li.chicken {-webkit-animation-duration:22s; -moz-animation-duration:22s;}
-ul.solarsystem li.chicken span {-webkit-animation-duration:2s; -moz-animation-duration:4s;}
-/* lobster animation */
-ul.solarsystem li.lobster {-webkit-animation-duration:32s; -moz-animation-duration:12s;}
-ul.solarsystem li.lobster span {-webkit-animation-duration:2s; -moz-animation-duration:4s;}
-/* lobster animation */
-ul.solarsystem li.salad {-webkit-animation-duration:42s; -moz-animation-duration:12s;}
-ul.solarsystem li.salad span {-webkit-animation-duration:2s; -moz-animation-duration:4s;}
+/* mars animation */
+ul.solarsystem li.mars {-webkit-animation-duration:22s; -moz-animation-duration:22s;}
+ul.solarsystem li.mars span {-webkit-animation-duration:2s; -moz-animation-duration:4s;}
+/* ceres animation */
+ul.solarsystem li.ceres {-webkit-animation-duration:32s; -moz-animation-duration:12s;}
+ul.solarsystem li.ceres span {-webkit-animation-duration:2s; -moz-animation-duration:4s;}
+/* ceres animation */
+ul.solarsystem li.jupiter {-webkit-animation-duration:42s; -moz-animation-duration:12s;}
+ul.solarsystem li.jupiter span {-webkit-animation-duration:2s; -moz-animation-duration:4s;}
 
 @-webkit-keyframes orbit { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
 @-webkit-keyframes moon { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
